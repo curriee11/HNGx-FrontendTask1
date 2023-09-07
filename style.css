@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #898087;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 23px;
+    color: rgb(232, 236, 240);
+}
+
+/* Flex container for Slack Name and Display Picture */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Slack Name */
+.slack-name {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+a{
+    color: rgb(207, 232, 224);
+}
+label{
+    color: black;
+}
+
+.label-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px; /* Adjust the gap as needed */
+    align-items: center; /* Vertically align elements */
+}

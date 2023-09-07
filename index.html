@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Welcome Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+    <!-- Slack Name -->
+    <label for="slackUserName" >Slack Name:&nbsp; </label>
+    <p class="slack-name" data-testid="slackUserName">@Khushi Agarwal</p>
+
+    <!-- Slack Display Picture -->
+    <img src="https://ca.slack-edge.com/T05FFAA91JP-U05QVEN2TC7-2b17fb160809-512" alt="@Khushi Agarwal" data-testid="slackDisplayImage" style="border-radius: 50%; width: 150px; height: 150px;">
+</div>
+
+<div class="flex-container label-grid">
+    <!-- Current Day of the Week -->
+    <label for="currentDayOfTheWeek" >Current Day of the Week:&nbsp;</label>
+    <p data-testid="currentDayOfTheWeek" >Monday</p>
+</div>
+<div class="flex-container label-grid">
+    <!-- Current UTC Time -->
+    <label for="currentUTCTime">Current UTC Time:&nbsp;</label>
+    <p data-testid="currentUTCTime">00:00:00 UTC</p>
+</div>
+<div class="flex-container label-grid">
+    <!-- Track -->
+    <label for="myTrack" >Track:&nbsp;</label>
+    <p data-testid="myTrack">Frontend</p>
+</div>
+<div class="flex-container label-grid">
+    <!-- GitHub URL -->
+    <label for="githubURL" >GitHub URL: &nbsp;</label>
+    <a href="https://github.com/curriee11/HNGx-FrontendTask1" target="_blank" data-testid="githubURL">GitHub Repository</a>
+</div>
+
+    <!-- <script>
+        // JavaScript to display dynamic content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the current day of the week
+            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const currentDate = new Date();
+            const currentDay = daysOfWeek[currentDate.getUTCDay()];
+            document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = currentDay;
+
+            // Get the current UTC time
+            const currentTime = currentDate.toUTCString().split(' ')[4];
+            document.querySelector('[data-testid="currentUTCTime"]').textContent = currentTime;
+        });
+    </script> -->
+</body>
+</html>
